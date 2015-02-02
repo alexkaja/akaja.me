@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:alexkaja/akaja.me.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/home/alex/Projects/Rails/akaja.me'
+set :deploy_to, '/home/alex/akaja.me'
 
 # set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
