@@ -17,7 +17,7 @@ role :db,  %w{alex@akaja.me}
 
 set :stage, :production
 
-server '104.236.218.58', user: 'alex', roles: %w{web app}
+server 'akaja.me', user: 'alex', roles: %w{web app}
 
 
 # Custom SSH Options
