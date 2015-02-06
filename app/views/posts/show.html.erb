@@ -8,7 +8,13 @@
   <p class="body">
     <%= @post.body %>
   </p>
+  <%= link_to 'Edit', edit_post_path(@post), class: 'button' %> &nbsp;&nbsp;
+  <%= link_to 'Delete', post_path(@post), method: :delete, class: "button", data: { confirm: 'Are you sure?' } %>
 
-  | <%= link_to 'Edit', edit_post_path(@post) %> |
-  <%= link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <div id="comments">
+    <h2><%= @post.comments.count %> Comments</h2>
+    <%= render @post.comments %>
+    <h3>Add a comment:</h3>
+    <%= render "comments/form" %>
+  </div>
 </div>
