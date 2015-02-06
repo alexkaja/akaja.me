@@ -30,7 +30,7 @@ a {
 }
 
 #sidebar {
-  width: 250px;
+  width: 150px;
   position: fixed;
   left: 0;
   top: 0;
@@ -40,7 +40,7 @@ a {
   border-right: 1px solid #d6dce0;
   #logo {
     position: absolute;
-    right: 4em;
+    right: 1.5em;
     top: 1.5em;
   }
   ul {
@@ -72,7 +72,7 @@ a {
   }
   .sign_in {
     position: absolute;
-    right: 6.5em;
+    right: 2.5em;
     text-align: center;
     top: 80%;
     font-size: 0.8em;
@@ -104,7 +104,7 @@ a {
 }
 
 #main_content {
-  margin-left: 250px;
+  margin-left: 150px;
   #header {
     padding: 1em 3em;
     border-bottom: 1px solid #d6dce0;
