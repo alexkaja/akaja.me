@@ -8,8 +8,11 @@
   <p class="body">
     <%= @post.body %>
   </p>
-  <%= link_to 'Edit', edit_post_path(@post), class: 'button' %> &nbsp;&nbsp;
-  <%= link_to 'Delete', post_path(@post), method: :delete, class: "button", data: { confirm: 'Are you sure?' } %>
+
+  <% if user_signed_in? %>
+    <%= link_to 'Edit', edit_post_path(@post), class: 'button' %> &nbsp;&nbsp;
+    <%= link_to 'Delete', post_path(@post), method: :delete, class: "button", data: { confirm: 'Are you sure?' } %>
+  <% end %>
 
   <div id="comments">
     <h2><%= pluralize(@post.comments.count, "comment") %></h2>

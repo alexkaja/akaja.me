@@ -49,3 +49,5 @@ gem 'capistrano-rbenv', github: "capistrano/rbenv"
 gem 'capistrano'
 gem 'capistrano-bundler'
 gem 'capistrano-rails'
+
+gem 'devise'

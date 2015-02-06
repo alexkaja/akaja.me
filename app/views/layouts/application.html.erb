@@ -28,18 +28,22 @@
       <li><a href="https://github.com/alexkaja">Github</a></li>
       <li><a href="mailto:akaja90@gmail.com">Email</a></li>
     </ul>
-
-    <p class="sign_in">Admin Login</p>
+    <% if !user_signed_in? %>
+      <p class="sign_in"><%= link_to "Admin Login", new_user_session_path %></p>
+    <% end %>
   </div>
 
   <div id="main_content">
     <div id="header">
       <p>My Home on the Web</p>
 
-      <div class="buttons">
-        <button class="button"><%= link_to "New Post", new_post_path %></button>
-        <button class="button">Log Out</button>
-      </div>
+      <% if user_signed_in? %>
+        <div class="buttons">
+          <button class="button"><%= link_to "New Post", new_post_path %></button>
+          <button class="button"><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></button>
+        </div>
+      <% end %>
+
     </div>
 
     <% flash.each do |name, msg| %>
