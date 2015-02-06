@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AkajaMe</title>
+  <title>akaja.me</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -17,9 +17,9 @@
 
     <ul>
       <li class="category">akaja.me</li>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Resume", resume_path %></li>
       <li><%= link_to "Blog", root_path %></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#">About</a></li>
     </ul>
 
     <ul>
@@ -34,7 +34,7 @@
 
   <div id="main_content">
     <div id="header">
-      <p>All Blog Posts</p>
+      <p>My Home on the Web</p>
 
       <div class="buttons">
         <button class="button"><%= link_to "New Post", new_post_path %></button>
