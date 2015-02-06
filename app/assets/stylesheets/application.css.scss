@@ -103,6 +103,34 @@ a {
   clear: both;
 }
 
+.flash_wrapper {
+  padding: 1.5em 4.5em 0em 3em;
+}
+
+.flash_notice, .flash_alert {
+  padding: 8px 35px 8px 14px;
+  width: 90%;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 10em
+}
+.flash_notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.flash_alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+
 #main_content {
   margin-left: 150px;
   #header {

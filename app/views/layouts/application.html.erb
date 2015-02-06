@@ -46,11 +46,11 @@
 
     </div>
 
-    <div id="page_wrapper">
+    <div class="flash_wrapper">
 
-    <% flash.each do |name, msg| %>
-      <%= content_tag(:div, msg, class: "alert") %>
-    <% end %>
+      <% flash.each do |name, msg| %>
+        <%= content_tag(:div, msg, class: "flash_alert") %>
+      <% end %>
 
     </div>
 
