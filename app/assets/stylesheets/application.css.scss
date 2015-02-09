@@ -77,6 +77,7 @@ a {
     top: 80%;
     font-size: 0.8em;
     color: #9eafba;
+    //bottom: 2em;
   }
 }
 
@@ -134,7 +135,8 @@ a {
 #main_content {
   margin-left: 150px;
   #header {
-    padding: 1em 3em;
+    padding: 11px 1em 11px 1em;
+    height: 1em;
     border-bottom: 1px solid #d6dce0;
     background: #eff1f3;
     color: #9eafba;
@@ -149,7 +151,7 @@ a {
     }
     .buttons {
       float: right;
-      margin-top: -6px;
+      margin-top: -7px;
       .button {
         font-size: .8em;
         margin-left: .5em;
